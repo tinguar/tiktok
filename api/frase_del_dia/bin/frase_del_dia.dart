@@ -1,6 +1,11 @@
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 
-import 'package:frase_del_dia/frase_del_dia.dart';
+void main()async {
+  final respuesta = await http
+      .get(Uri.parse('https://frasedeldia.azurewebsites.net/api/phrase'));
 
-void main() {
-  frase_api();
+  final jsonData = jsonDecode(respuesta.body);
+  final frase = jsonData['phrase'];
+  print(frase);
 }
