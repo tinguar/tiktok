@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #2e3440;
+    color: #d8dee9; 
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+#clock-dict {
+    background: #3b4252; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+pre {
+    margin: 0;
+    font-size: 2.5em;
+    line-height: 1.5; 
+}
